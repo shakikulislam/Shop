@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Show</title>
+</head>
+<body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: silver;
+    }
+    #HeadTitle {
+        font-size: 30px;
+        color: red;
+        text-align: center;
+        
+    }
+     #mainArea {
+         margin: 0 auto;
+         margin-top: 20px;
+         margin-bottom: 20px;
+         width: 960px;
+     }
+    table {
+        width: 100%;
+        border: 3px solid;
+        border-color: green;
+        background-color: white;
+    }
+
+    #tableHeader {
+        border: 1px solid green;
+        background-color: green;
+        color: white;
+    }
+
+    tr, td {
+        border: 1px solid;
+        border-color: grey;
+    }
+</style>
+<div id="mainArea">
+    <p id="HeadTitle">Customer Details Table</p>
+    <table id="table">
+        <tr id="tableHeader">
+            <td>SL</td>
+            <td>Customer Id</td>
+            <td>Name</td>
+            <td>Code</td>
+            <td>Address</td>
+            <td>Email</td>
+            <td>Contact</td>
+            <td>Age</td>
+            <td>Loyality Point</td>
+        </tr>
+        @foreach (var customers in Model)
+        {
+            <tr>
+                <td>@customers.SlNo</td>
+                <td>@customers.CustomerId</td>
+                <td>@customers.Name</td>
+                <td>@customers.Code</td>
+                <td>@customers.Address</td>
+                <td>@customers.Email</td>
+                <td>@customers.Contact</td>
+                <td>@customers.Age</td>
+                <td>@customers.LoyalityPoint</td>
+            </tr>
+
+        }
+    </table>
+</div>
+</body>
+</html>
