@@ -1,0 +1,124 @@
+﻿
+@model List<Shop.Models.Customer> 
+
+@{
+    ViewBag.Title = "View Customer Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@section Styles
+{
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: silver;
+        }
+
+        #HeadTitle {
+            font-size: 28px;
+            margin: -20px 0px 40px 0px;
+            color: red;
+            text-align: center;
+        }
+
+        #mainArea {
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 960px;
+        }
+
+        #table {
+            width: 100%;
+            border: 3px solid;
+            border-color: green;
+            background-color: white;
+        }
+
+        #tableHeader {
+            border: 1px solid green;
+            background-color: green;
+            color: white;
+        }
+
+        #table tr td {
+            border: 1px solid;
+            border-color: grey;
+            padding: 0px 5px;
+        }
+        #tableHeader th {
+            text-align: center;
+
+        }
+        .PostTable {
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .PostTable td {
+            margin: 0px 5px;
+        }
+    </style>
+
+}
+
+
+<div id="mainArea">
+    <p id="HeadTitle">Customer Details Table</p>
+
+    <form method="POST">
+        <table class="PostTable">
+            <tr>
+                @*<td>Customer ID&nbsp;&nbsp;</td>
+                <td>
+                    <input type="text" name="CustomerId" />&nbsp;
+                </td>*@
+                <td>
+                    <input type="submit" value="Search"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <table id="table">
+            <thead id="tableHeader">
+            <tr id="tableHeader">
+                <th style="width: 40px">SL</th>
+                <th style="width: 100px">Customer Id</th>
+                <th style="width: 200px">Name</th>
+                <th>Code</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Age</th>
+                <th style="width: 100px">Loyality Point</th>
+            </tr>
+            </thead>
+            <tbody>
+            @{ var index = 0;}
+            @foreach (var customers in Model)
+            {
+                <tr>
+                    <td>@(++index)</td>
+                    <td>@customers.CustomerId</td>
+                    <td>@customers.Name</td>
+                    <td>@customers.Code</td>
+                    <td>@customers.Address</td>
+                    <td>@customers.Email</td>
+                    <td>@customers.Contact</td>
+                    <td>@customers.Age</td>
+                    <td>@customers.LoyalityPoint</td>
+                </tr>
+
+            }
+            </tbody>
+
+        </table>
+    }
+    
+
+</div>

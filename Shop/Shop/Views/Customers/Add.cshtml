@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "Add Customer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles
+{
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: silver;
+        }
+
+        #HeadTitle {
+            font-size: 28px;
+            margin: -20px 0px 40px 0px;
+            color: red;
+            text-align: center;
+        }
+
+        #mainArea {
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 960px;
+        }
+
+        table {
+            margin: 0 auto;
+            border: 3px solid;
+            border-color: green;
+            background-color: white;
+        }
+
+        #message {
+            text-align: center;
+        }
+    </style>
+}
+
+
+<div id="mainArea">
+    <p id="HeadTitle">Customer Entry Form</p>
+    <div id="message">
+        @if (ViewBag.SMsg != null)
+        {
+            <p style="color: green; font-weight: bolder">@(ViewBag.SMsg)</p>
+        }
+        else if (ViewBag.FMsg != null)
+        {
+            <p style="color: red; font-weight: bolder">@(ViewBag.FMsg)</p>
+        }
+    </div>
+    <form method="POST">
+        <table>
+            <tr>
+                <td>Customer Id: </td>
+                <td><input type="text" name="CustomerId"/></td>
+            </tr>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="Name"/></td>
+            </tr>
+            <tr>
+                <td>Code: </td>
+                <td><input type="text" name="Code"/></td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td><input type="text" name="Address"/></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" name="Email"/></td>
+            </tr>
+            <tr>
+                <td>Contact: </td>
+                <td><input type="text" name="Contact"/></td>
+            </tr>
+            <tr>
+                <td>Age: </td>
+                <td><input type="text" name="Age"/></td>
+            </tr>
+            <tr>
+                <td>Loyality Point: </td>
+                <td><input type="text" name="LoyalityPoint"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Add" style="width: 90px; height: 40px;"/></td>
+            </tr>
+        </table>
+    </form>
+</div>

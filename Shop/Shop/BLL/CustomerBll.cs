@@ -6,28 +6,31 @@ namespace Shop.BLL
 {
     public class CustomerBll
     {
-        CustomersRepository customersRepository = new CustomersRepository();
+        CustomersRepository _customers = new CustomersRepository();
 
         public bool Add(Customer customer)
         {
-            var isSaved= customersRepository.Add(customer);
-            return isSaved;
+            return _customers.Add(customer);
         }
 
         public bool Update(Customer customer)
         {
-            var isUpdate = customersRepository.Update(customer);
-            return isUpdate;
+            return _customers.Update(customer);
         }
         public bool Delete(Customer customer)
         {
-            var isDelete = customersRepository.Delete(customer);
-            return isDelete;
+            return _customers.Delete(customer);
         }
 
-        public List<Customer> Show(int index)
+        public Customer GetCustomerById(int id)
         {
-            return customersRepository.Show(index);
+            return _customers.GetCustomerById(id);
+        }
+
+        public List<Customer> Search()
+        {
+            var dataList = _customers.Search();
+            return dataList;
         }
     }
 }
