@@ -6,29 +6,15 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-
 @section Styles
 {
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: silver;
-        }
 
         #HeadTitle {
             font-size: 28px;
             margin: -20px 0px 40px 0px;
             color: red;
             text-align: center;
-        }
-
-        #mainArea {
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 960px;
         }
 
         #table {
@@ -39,14 +25,14 @@
         }
 
         #tableHeader {
-            border: 1px solid green;
+            border: 1px solid;
             background-color: green;
             color: white;
         }
 
         #table tr td {
             border: 1px solid;
-            border-color: grey;
+            border-color: green;
             padding: 0px 5px;
         }
         #tableHeader th {
@@ -64,8 +50,6 @@
 
 }
 
-
-<div id="mainArea">
     <p id="HeadTitle">Customer Details Table</p>
 
     <form method="POST">
@@ -113,12 +97,9 @@
                     <td>@customers.Age</td>
                     <td>@customers.LoyalityPoint</td>
                 </tr>
-
             }
             </tbody>
 
         </table>
     }
     
-
-</div>

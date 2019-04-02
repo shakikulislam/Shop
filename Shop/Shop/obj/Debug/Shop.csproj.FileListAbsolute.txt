@@ -56,3 +56,25 @@ E:\My Create\VS2013\BITM\WEB\Shop\Shop\Shop\bin\System.Web.Mvc.xml
 E:\My Create\VS2013\BITM\WEB\Shop\Shop\Shop\obj\Debug\Shop.dll
 E:\My Create\VS2013\BITM\WEB\Shop\Shop\Shop\obj\Debug\Shop.pdb
 E:\My Create\VS2013\BITM\WEB\Shop\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+D:\Shop\Shop\Shop\bin\Shop.dll.config
+D:\Shop\Shop\Shop\bin\Shop.dll
+D:\Shop\Shop\Shop\bin\Shop.pdb
+D:\Shop\Shop\Shop\bin\EntityFramework.dll
+D:\Shop\Shop\Shop\bin\EntityFramework.SqlServer.dll
+D:\Shop\Shop\Shop\bin\System.Web.Helpers.dll
+D:\Shop\Shop\Shop\bin\System.Web.Mvc.dll
+D:\Shop\Shop\Shop\bin\System.Web.Razor.dll
+D:\Shop\Shop\Shop\bin\System.Web.Webpages.Deployment.dll
+D:\Shop\Shop\Shop\bin\System.Web.Webpages.dll
+D:\Shop\Shop\Shop\bin\System.Web.Webpages.Razor.dll
+D:\Shop\Shop\Shop\bin\EntityFramework.xml
+D:\Shop\Shop\Shop\bin\EntityFramework.SqlServer.xml
+D:\Shop\Shop\Shop\bin\System.Web.Razor.xml
+D:\Shop\Shop\Shop\bin\System.Web.Webpages.xml
+D:\Shop\Shop\Shop\bin\System.Web.Webpages.Deployment.xml
+D:\Shop\Shop\Shop\bin\System.Web.Webpages.Razor.xml
+D:\Shop\Shop\Shop\bin\System.Web.Helpers.xml
+D:\Shop\Shop\Shop\bin\System.Web.Mvc.xml
+D:\Shop\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+D:\Shop\Shop\Shop\obj\Debug\Shop.dll
+D:\Shop\Shop\Shop\obj\Debug\Shop.pdb

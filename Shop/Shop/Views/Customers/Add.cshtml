@@ -7,26 +7,12 @@
 @section Styles
 {
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: silver;
-        }
-
         #HeadTitle {
             font-size: 28px;
             margin: -20px 0px 40px 0px;
             color: red;
             text-align: center;
         }
-
-        #mainArea {
-            margin: 0 auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 960px;
-        }
-
         table {
             margin: 0 auto;
             border: 3px solid;
@@ -41,7 +27,6 @@
 }
 
 
-<div id="mainArea">
     <p id="HeadTitle">Customer Entry Form</p>
     <div id="message">
         @if (ViewBag.SMsg != null)
@@ -93,4 +78,3 @@
             </tr>
         </table>
     </form>
-</div>
