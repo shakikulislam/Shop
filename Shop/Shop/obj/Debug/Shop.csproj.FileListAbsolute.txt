@@ -78,3 +78,11 @@ D:\Shop\Shop\Shop\bin\System.Web.Mvc.xml
 D:\Shop\Shop\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
 D:\Shop\Shop\Shop\obj\Debug\Shop.dll
 D:\Shop\Shop\Shop\obj\Debug\Shop.pdb
+D:\Shop\Shop\Shop\bin\Shop.Bll.dll
+D:\Shop\Shop\Shop\bin\Shop.DatabaseContext.dll
+D:\Shop\Shop\Shop\bin\Shop.Models.dll
+D:\Shop\Shop\Shop\bin\Shop.Repository.dll
+D:\Shop\Shop\Shop\bin\Shop.Bll.pdb
+D:\Shop\Shop\Shop\bin\Shop.DatabaseContext.pdb
+D:\Shop\Shop\Shop\bin\Shop.Models.pdb
+D:\Shop\Shop\Shop\bin\Shop.Repository.pdb

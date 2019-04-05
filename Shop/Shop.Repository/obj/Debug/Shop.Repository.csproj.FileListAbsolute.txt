@@ -1,0 +1,11 @@
+D:\Shop\Shop\Shop.Repository\obj\Debug\Shop.Repository.csprojResolveAssemblyReference.cache
+D:\Shop\Shop\Shop.Repository\bin\Debug\Shop.Repository.dll
+D:\Shop\Shop\Shop.Repository\bin\Debug\Shop.Repository.pdb
+D:\Shop\Shop\Shop.Repository\bin\Debug\EntityFramework.dll
+D:\Shop\Shop\Shop.Repository\bin\Debug\Shop.DatabaseContext.dll
+D:\Shop\Shop\Shop.Repository\bin\Debug\Shop.Models.dll
+D:\Shop\Shop\Shop.Repository\bin\Debug\Shop.DatabaseContext.pdb
+D:\Shop\Shop\Shop.Repository\bin\Debug\Shop.Models.pdb
+D:\Shop\Shop\Shop.Repository\bin\Debug\EntityFramework.xml
+D:\Shop\Shop\Shop.Repository\obj\Debug\Shop.Repository.dll
+D:\Shop\Shop\Shop.Repository\obj\Debug\Shop.Repository.pdb

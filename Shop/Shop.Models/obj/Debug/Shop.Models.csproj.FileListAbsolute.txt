@@ -1,0 +1,4 @@
+D:\Shop\Shop\Shop.Models\bin\Debug\Shop.Models.dll
+D:\Shop\Shop\Shop.Models\bin\Debug\Shop.Models.pdb
+D:\Shop\Shop\Shop.Models\obj\Debug\Shop.Models.dll
+D:\Shop\Shop\Shop.Models\obj\Debug\Shop.Models.pdb

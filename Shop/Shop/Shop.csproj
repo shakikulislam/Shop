@@ -111,16 +111,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="BLL\CustomerBll.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\CustomersRepository.cs" />
-    <Compile Include="DatabaseContext\ShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -141,6 +136,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shop.Bll\Shop.Bll.csproj">
+      <Project>{5744275E-2DF9-43D1-8A1A-7DA3CF3B1256}</Project>
+      <Name>Shop.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shop.Models\Shop.Models.csproj">
+      <Project>{664AC664-34BE-405E-96D3-5704700D5E71}</Project>
+      <Name>Shop.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
