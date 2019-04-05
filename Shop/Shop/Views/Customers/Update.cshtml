@@ -1,4 +1,4 @@
-﻿
+﻿@model Shop.Models.Customer
 @{
     ViewBag.Title = "Update Customer Information";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -43,14 +43,32 @@
     </div>
     <form method="POST">
         <table id="table">
-            <tr>
-                <td>Customer Id: </td>
-                <td><input type="text" name="CustomerId" /></td>
-            </tr>
-            <tr>
-                <td>Name: </td>
-                <td><input type="text" name="Name" /></td>
-            </tr>
+            @if (Model != null)
+            {
+
+                <tr>
+                    <td>Customer Id: </td>
+                    <td>@Html.TextBoxFor(c=>c.CustomerId)</td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td>@Html.TextBoxFor(c=>c.Name)</td>
+                </tr>
+            
+            }
+            else
+            {
+
+                <tr>
+                    <td>Customer Id: </td>
+                    <td><input type="text" name="CustomerId" /></td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" name="Name" /></td>
+                </tr>
+                
+            }
             <tr>
                 <td>Code: </td>
                 <td><input type="text" name="Code" /></td>

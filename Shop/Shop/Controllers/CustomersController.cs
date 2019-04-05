@@ -47,9 +47,10 @@ namespace Shop.Controllers
             return View();
         }
 
-        public ActionResult Update()
+        public ActionResult Update(int id)
         {
-            return View();
+            var getCustomer = _customerBll.GetCustomerById(id);
+            return View(getCustomer);
         }
 
         [HttpPost]

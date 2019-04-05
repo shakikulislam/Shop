@@ -98,8 +98,8 @@
                     <td>@customers.Age</td>
                     <td>@customers.LoyalityPoint</td>
                     <td>
-                        <input type="button" name="Edit" value="Edit"/>
-                        <input type="button" name="Delete" value="Delete"/>
+                        @Html.ActionLink("Update","Update","Customers",new {id=customers.CustomerId}, new {@target= "_black"})
+                        @Html.ActionLink("Delete","Delete","Customers",new {id=customers.CustomerId}, new {@target= "_black"})
                     </td>
                 </tr>
             }
